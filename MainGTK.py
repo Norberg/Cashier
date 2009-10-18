@@ -15,6 +15,8 @@ except:
 import MySQLdb, time
 import ToolGTK
 import AccountHolderGTK
+import AccountGTK
+import AddAnotherGTK
 
 class MainGTK:
 
@@ -30,3 +32,7 @@ class MainGTK:
 		self.on_frmMain_destroy(widget)
 	def on_btnAccountHolder_clicked(self, widget):
 		AccountHolderGTK.AccountHolderGTK()
+	def on_btnAddAccount_clicked(self, widget):
+		AccountGTK.AccountGTK()
+	def on_btnAddAnother_clicked(self, widget):
+		AddAnotherGTK.AddAnotherGTK()	
